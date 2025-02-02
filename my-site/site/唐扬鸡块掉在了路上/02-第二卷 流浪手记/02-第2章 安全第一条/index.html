@@ -1,0 +1,2463 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../01-%E7%AC%AC1%E7%AB%A0%20%E8%A1%8C%E8%BD%A6%E4%B8%8D%E8%A7%84%E8%8C%83/">
+      
+      
+        <link rel="next" href="../../03-%E7%AC%AC%E4%B8%89%E5%8D%B7%20%E6%88%91%E7%9C%9F%E7%9A%84%E4%BB%80%E4%B9%88%E9%83%BD%E4%B8%8D%E4%BC%9A/01-%E7%AC%AC1%E7%AB%A0%20%E5%8D%96%E8%90%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.1">
+    
+    
+      
+        <title>02 第2章 安全第一条 - 🐈浮槎</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="🐈浮槎" class="md-header__button md-logo" aria-label="🐈浮槎" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            🐈浮槎
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              02 第2章 安全第一条
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="🐈浮槎" class="md-nav__button md-logo" aria-label="🐈浮槎" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    🐈浮槎
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    唐扬鸡块掉在了路上
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            唐扬鸡块掉在了路上
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一卷 zero 一获千金游戏
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一卷 zero 一获千金游戏
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20zero%20%E4%B8%80%E8%8E%B7%E5%8D%83%E9%87%91%E6%B8%B8%E6%88%8F/01-%E7%AC%AC1%E7%AB%A0%20Zero%20and%20Shirube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第1章 Zero and Shirube
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 第二卷 流浪手记
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            02 第二卷 流浪手记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-%E7%AC%AC1%E7%AB%A0%20%E8%A1%8C%E8%BD%A6%E4%B8%8D%E8%A7%84%E8%8C%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第1章 行车不规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    02 第2章 安全第一条
+    
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    03 第三卷 我真的什么都不会
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            03 第三卷 我真的什么都不会
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-%E7%AC%AC%E4%B8%89%E5%8D%B7%20%E6%88%91%E7%9C%9F%E7%9A%84%E4%BB%80%E4%B9%88%E9%83%BD%E4%B8%8D%E4%BC%9A/01-%E7%AC%AC1%E7%AB%A0%20%E5%8D%96%E8%90%8C%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8F%AF%E8%83%BD%E6%80%A7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第1章 卖萌失败的可能性
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-%E7%AC%AC%E4%B8%89%E5%8D%B7%20%E6%88%91%E7%9C%9F%E7%9A%84%E4%BB%80%E4%B9%88%E9%83%BD%E4%B8%8D%E4%BC%9A/02-%E7%AC%AC2%E7%AB%A0%20%E5%B0%8F%E9%AC%BC%E7%9A%84%E6%84%BF%E6%9C%9B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 第2章 小鬼的愿望
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-%E7%AC%AC%E4%B8%89%E5%8D%B7%20%E6%88%91%E7%9C%9F%E7%9A%84%E4%BB%80%E4%B9%88%E9%83%BD%E4%B8%8D%E4%BC%9A/03-%E7%AC%AC3%E7%AB%A0%20%E5%B0%8F%E9%9C%B8%E7%8E%8B%E7%BF%BB%E8%BD%A6%E8%AE%B0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 第3章 小霸王翻车记
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03-%E7%AC%AC%E4%B8%89%E5%8D%B7%20%E6%88%91%E7%9C%9F%E7%9A%84%E4%BB%80%E4%B9%88%E9%83%BD%E4%B8%8D%E4%BC%9A/04-%E7%AC%AC4%E7%AB%A0%20%E5%AD%A6%E8%89%BA%E4%B8%8D%E7%B2%BE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 第4章 学艺不精
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    04 第四卷 盗钥匙的方法
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            04 第四卷 盗钥匙的方法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04-%E7%AC%AC%E5%9B%9B%E5%8D%B7%20%E7%9B%97%E9%92%A5%E5%8C%99%E7%9A%84%E6%96%B9%E6%B3%95/01-%E7%AC%AC1%E7%AB%A0%20%E6%BC%94%E6%8A%80%E8%AE%AD%E7%BB%83/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第1章 演技训练
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    拾盐
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            拾盐
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一卷 我，气运之子？
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一卷 我，气运之子？
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E5%88%9D%E6%AF%94/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 初比
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/02-%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%8B%9C%E5%B8%88/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 第二章 拜师
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/03-%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E6%8C%91%E8%A1%85/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 第三章 挑衅
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/04-%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E9%A2%93%E5%BA%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 第四章 颓废
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/05-%E7%AC%AC%E4%BA%94%E7%AB%A0%20%E5%B7%A6%E9%81%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    05 第五章 左道
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/06-%E7%AC%AC%E5%85%AD%E7%AB%A0%20%E4%BD%99%E8%BE%9C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    06 第六章 余辜
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/07-%E7%AC%AC%E4%B8%83%E7%AB%A0%20%E5%AE%8C%E7%BB%93/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 第七章 完结
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1_8" id="__nav_3_1_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    游戏原稿
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            游戏原稿
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/01-%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/02-%E7%AC%AC%E4%BA%8C%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 第二章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/03-%E7%AC%AC%E4%B8%89%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    03 第三章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/04-%E7%AC%AC%E5%9B%9B%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    04 第四章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/05-%E7%AC%AC%E4%BA%94%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    05 第五章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/06-%E7%AC%AC%E5%85%AD%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    06 第六章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%88%91%EF%BC%8C%E6%B0%94%E8%BF%90%E4%B9%8B%E5%AD%90%EF%BC%9F/%E6%B8%B8%E6%88%8F%E5%8E%9F%E7%A8%BF/07-%E7%AC%AC%E4%B8%83%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    07 第七章
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 第二卷 生于杜鹃世家
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            02 第二卷 生于杜鹃世家
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%8B%BE%E7%9B%90/02-%E7%AC%AC%E4%BA%8C%E5%8D%B7%20%E7%94%9F%E4%BA%8E%E6%9D%9C%E9%B9%83%E4%B8%96%E5%AE%B6/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A5%94%E5%AD%90/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 楔子
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    改造节目见闻录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            改造节目见闻录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    家庭
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            家庭
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%94%B9%E9%80%A0%E8%8A%82%E7%9B%AE%E8%A7%81%E9%97%BB%E5%BD%95/%E5%AE%B6%E5%BA%AD/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E7%9F%AD%E7%AF%87%20%E6%B2%89%EF%BC%88%E5%AF%BF%E5%8F%B8%E5%B8%88%E5%82%85%20%E5%84%BF%E5%AD%90%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第一章 短篇 沉（寿司师傅 儿子）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    建筑师
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            建筑师
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%94%B9%E9%80%A0%E8%8A%82%E7%9B%AE%E8%A7%81%E9%97%BB%E5%BD%95/%E5%BB%BA%E7%AD%91%E5%B8%88/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E5%A7%8B%E6%B5%81/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    第二章 始流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    流浪手记
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            流浪手记
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    父子
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            父子
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E4%B8%AD%E6%A0%A1%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97%EF%BC%88%E5%89%A7%E6%83%85%E5%90%91%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    中校自救指南（剧情向）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E4%BD%A0%E5%B0%B1%E4%BB%97%E7%9D%80%E6%88%91%E4%BC%9A%E5%8E%9F%E8%B0%85%E4%BD%A0%EF%BC%88%E7%88%B6%E5%AD%90%E4%BA%B2%E6%83%85%E5%90%91%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    你就仗着我会原谅你（父子亲情向）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E5%83%8F%E5%9C%B0%E7%90%83%E5%95%A6%E9%A3%9E%E9%A9%B0%E5%90%A7%EF%BC%88%E9%A3%9E%E9%A9%B0%E4%BA%BA%E7%94%9F%20%E6%B5%81%E6%B5%AA%E5%9C%B0%E7%90%83%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    像地球啦飞驰吧（飞驰人生 流浪地球）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E6%83%B3%E6%B3%95/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    想法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E8%AE%BA%E4%B8%AD%E6%A0%A1%E5%A6%82%E4%BD%95%E5%93%84%E5%9B%9E%E4%BB%96%E7%9A%84%E5%84%BF%E5%AD%90%EF%BC%88%E7%88%B6%E5%AD%90%E4%BA%B2%E6%83%85%E5%90%91%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    论中校如何哄回他的儿子（父子亲情向）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E6%B5%81%E6%B5%AA%E6%89%8B%E8%AE%B0/%E7%88%B6%E5%AD%90/%E8%B9%A9%E8%84%9A%E7%9A%84%E7%8A%92%E8%B5%8F%EF%BC%88%E7%88%B6%E5%AD%90%E4%BA%B2%E6%83%85%E5%90%91%EF%BC%89/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    蹩脚的犒赏（父子亲情向）
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    独在异乡
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            独在异乡
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    异客
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            异客
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1_1" id="__nav_6_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一卷 欧洲
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一卷 欧洲
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1_1_1" id="__nav_6_1_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一部 真理与权杖
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_1_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一部 真理与权杖
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%8B%AC%E5%9C%A8%E5%BC%82%E4%B9%A1/%E5%BC%82%E5%AE%A2/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%AC%A7%E6%B4%B2/01-%E7%AC%AC%E4%B8%80%E9%83%A8%20%E7%9C%9F%E7%90%86%E4%B8%8E%E6%9D%83%E6%9D%96/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E8%BF%9C%E6%B8%A1%E9%87%8D%E6%B4%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 远渡重洋
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1_1_2" id="__nav_6_1_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 第二部 室友观察录
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_6_1_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            02 第二部 室友观察录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%8B%AC%E5%9C%A8%E5%BC%82%E4%B9%A1/%E5%BC%82%E5%AE%A2/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E6%AC%A7%E6%B4%B2/02-%E7%AC%AC%E4%BA%8C%E9%83%A8%20%E5%AE%A4%E5%8F%8B%E8%A7%82%E5%AF%9F%E5%BD%95/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20hookah/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 hookah
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    远山
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            远山
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_1" id="__nav_6_2_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一卷 西南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一卷 西南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%8B%AC%E5%9C%A8%E5%BC%82%E4%B9%A1/%E8%BF%9C%E5%B1%B1/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E8%A5%BF%E5%8D%97/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%B7%96/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 淖
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2_2" id="__nav_6_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 第二卷 东北
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            02 第二卷 东北
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%8B%AC%E5%9C%A8%E5%BC%82%E4%B9%A1/%E8%BF%9C%E5%B1%B1/02-%E7%AC%AC%E4%BA%8C%E5%8D%B7%20%E4%B8%9C%E5%8C%97/02-%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E9%95%87/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 第二章 镇
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    碎星
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            碎星
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    01 第一卷 勤深深
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            01 第一卷 勤深深
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A2%8E%E6%98%9F/01-%E7%AC%AC%E4%B8%80%E5%8D%B7%20%E5%8B%A4%E6%B7%B1%E6%B7%B1/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E4%B8%80%E5%BE%80%E5%8B%A4%E6%B7%B1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 一往勤深
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    02 第二卷 生深不息
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            02 第二卷 生深不息
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A2%8E%E6%98%9F/02-%E7%AC%AC%E4%BA%8C%E5%8D%B7%20%E7%94%9F%E6%B7%B1%E4%B8%8D%E6%81%AF/01-%E7%AC%AC%E4%B8%80%E7%AB%A0%20Leo%E5%93%A5%E7%9C%8B%E8%A7%81%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    01 第一章 Leo哥看见了什么？
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E7%A2%8E%E6%98%9F/02-%E7%AC%AC%E4%BA%8C%E5%8D%B7%20%E7%94%9F%E6%B7%B1%E4%B8%8D%E6%81%AF/02-%E5%B0%8F%E5%89%A7%E5%9C%BA%20%E4%BC%91%E6%81%AF%E5%AE%A4%E4%B8%BA%E4%BD%95%E5%BF%99%E7%A2%8C%EF%BC%9F/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    02 小剧场 休息室为何忙碌？
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>02 第2章 安全第一条</h1>
+
+<p>第2章 安全第一条</p>
+<p>（1）</p>
+<p>在刘启清醒过来的时候，他感觉似乎有什么不太对劲。首先，为什么他的床上似乎不是只有自己在，而还躺了一个人？而身后的人似乎睡得十分安宁，就好像这个情况是非常正常的一样。</p>
+<p>他僵硬着身子，一点一点把自己翻转过来，想看看背后究竟是个什么存在。却不想当从全侧转成半侧的时候，从臀部那里传来了可疑的痛感，就好像，曾经被人打了似的。</p>
+<p>这究竟发生了什么？他一边悄悄转身，不想惊动背后的人，一边在脑子里飞速思考，睡着之前自己究竟在哪里，究竟在干什么？但不知为什么记忆的碎片相当零散，能想起的最近的事，好像就是，监狱里的刘培强，以及飞驰的运载车？</p>
+<p>在身体终于以背面完整的接触床的时候，痛感好像更强烈了，但他并不想管这个了，闭着眼睛将头转向了另一侧，深吸了一口气，伴随着这口气被缓缓吐出，睁开了眼睛。</p>
+<p>果然是他！虽然只有匆匆一瞥，但是刘培强的脸，就是这么坚实的烙在脑海中，哪有办法不承认呢……</p>
+<p>但刘启也并不明白，为什么他对这个父亲的怨恨，比之记忆里消退了那么多。现在要他真心实意的对着刘培强大喊一声“你给我滚出去！”，都提不起这个劲来。</p>
+<p>但这个情景太过尴尬了，刘启只能看着刘培强熟睡的脸，蹑手蹑脚得从床上蹭下来，悄无声息的提溜着他的衣服，逃进了厕所。只是没有看到，在他出门时，刘培强安静地睁开那双清明的眼中带着的了然。</p>
+<p>暂且不提刘启在换衣服时确认了自个儿屁股上的巴掌印时有多么羞恼，只说此后这家里的鸡飞狗跳鸡毛蒜皮，基本上都是刘启一个人造的。</p>
+<p>“韩朵朵！我跟你说过多少次了，这个家伙还没吃完饭的时候不要叫我出来，这个家里有他的地方没我！”</p>
+<p>“老东西，别放你那海草海草了！这么无聊的东西除了你和那混蛋谁能欣赏啊！”</p>
+<p>“韩朵朵，我都说了我东西你别乱动！”“哎呀，这不是刘叔叔回来了我们要给他腾点位置嘛！”“那个家伙自己有分给他的航天员专用住房，跟我们挤着有什么意思？再说了，这里，我不欢迎他！就他这种人，我不想和他住在一起！”</p>
+<p>总而言之，刘培强即使被分了一套崭新的住房，也没打算去，而是干脆利落的把这些福利推了，然后安稳的住在这个小房子里，一天天就喜欢看着自己这个完全没有脱离青春期的中二病儿子作天作地。</p>
+<p>如果日子就这么安静愉快的继续，似乎也很好。但就当刘培强这样想着，顺便再偶尔想起他死了那头的宇宙里，和他相见时被他揍了一顿的另一个儿子时，这平静愉快的生活忽然就被打破了。</p>
+<p>他的中二病大儿子，不见了。</p>
+<p>（2）</p>
+<p>在刘启从医院里清醒之后，看着眼前哭得上气不接下气的韩朵朵，以及在她背后不住安慰的Tim，内心果然还是很惆怅的。</p>
+<p>刘培强那个混蛋，说要陪我慢慢变老的呢？又不能实现了，这个骗子，究竟想要骗自己几次啊……</p>
+<p>但不管怎么说，这场梦境，或者也可以说是一段短暂的穿越吧，终究给刘启带来了一点安慰。而当他听说，王磊居然也没有死的时候，这份安慰，似乎就更浓重了一点。</p>
+<p>王磊那时候的确差不多也算是要死透了，结果那场冲击波，竟然奇迹般的让他在那个场地上被非常及时的发现了，之后的抢救也是难得的顺利，反正不管怎么说，他不但活下来了，还能在整个身体修复之后依旧回到CN171-11这个编制，和他的原班人马一起执行任务，真的是难得的幸运。</p>
+<p>同时，由于两人深刻的羁绊，几乎都属于亲人几近于无的刘启和王磊，也多出了互为紧急联系人这么一重微妙的关系。王磊的年纪，几乎和刘培强的生理年龄差不多；虽然刘户口从没承认，王磊在拿朵朵当女儿时，对着他实际上也是亦兄亦父。他也从没对别人说过，在把朵朵拖走而放弃了王磊的时候，他差点觉得他爹又没了一次。</p>
+<p>此后，刘启在自己身体修养好之后，就早早开始了考取初级驾驶员证件的活动，结果也的确是好的，在大多数人正经要学五年的的时候，他凭着自己的“天才”，或者倒不如说是生死之际练出来的车技吧，在三年中就很顺利地拿下了证件。然而之后究竟是继承姥爷的工作，还是加入CN171-11这个小队，他却还没有打算好。</p>
+<p>不过，在这几年间，周边的叛军势力越来越猖獗了。不但在地下城之中，还有地面上，各式各样的奇怪人类轮番出现。有一些还算是温和派，像大约一百年前的学生运动那样，举着各式各样的牌子，这个大喊“太阳不会氦闪”，那个高呼“还我阳光”，但是既不打砸抢，也不硬拉着周边的路人传教，似乎也只能暗暗骂他们几句傻逼，其他也没有必要。</p>
+<p>但是非温和派的叛军就不一样了，他们在地下城中潜藏的时候倒是不怎么做出有危害的举动，但是一旦在地面上，就仿佛连人都不是了，一个个不是用救援信号引来帮忙的运载车或是平民小队，然后抢走他们的车辆，让这些好心人几乎大半被活活饿死或者是冻死在地面上。就是干脆直接冲进地下城上方的发动机里搞破坏，似乎不弄灭一个发动机他们这辈子就算白活了一样。</p>
+<p>反正总而言之，这群人的出现，实际上对这个已经正在飞向新家园的地球是完全没有好处的。即使按照他们说的，太阳不会氦闪，那么已经好不容易离开的太阳系，也不是说回就能回的。甚至于，就算回去了，为了这个计划，死掉的那么多人，地球上35亿人，那么多毁于岩浆的地下城里的人，或者再从私心一点讲，冲过去当了火柴的大骗子刘培强，他们的牺牲能这么随随便便的，用一句还我阳光抹消吗？</p>
+<p>反正刘启他是受不了，所以随着他在刚拿到驾驶证之后的几个月中这些情况的愈演愈烈，他还是放弃了继承姥爷的光荣岗位这个想法，转而正式的加入了王磊的小队。但果然，他这从没经过军事化锻炼的身体，在小队中，也只能有唯一的身份——驾驶员。</p>
+<p>这可与他的想象相差甚远，虽然在王磊的手下，他暂时还能安稳的在这个岗位上发光发热；但是私下里是怎么跟小队里的所有成员死皮赖脸的学习各项军事技能的，这话都没法说。</p>
+<p>按照常理来说，他这样认真训练，好好出任务，没事还能带着妹妹出去逛逛的日子应该也很棒；努力训练几年还有机会正式转为军人编制，也完全不必太急。但是，在他听闻苏拉威西三号转向发动机也受到叛军劫持，差点被毁的时候，他就没法继续这样的普通生活了。</p>
+<p>当某个休假后重整队伍的时候，王磊有些不太惊讶地发现。</p>
+<p>自己的驾驶员，不见了。</p>
+<p>（3）</p>
+<p>刘启早就想要跑了，或者可以说，即使他后来得知他的第一次离家出走时撞上了大冰柱，虽然没受什么大伤，顺利被带回了家，只是失去了一段记忆而已，他也是从那时就在谋划着下一次的出逃了。</p>
+<p>最近的日子其实不错，即使狭小的房间里又多了一个人，也并没能败坏他的不明来由的好心情。但是，就这么和刘培强和解，就这么和刘培强相处融洽，是根本不可能的！要是这么随便就接受了这个骗子，那这么多年来，对他的怨恨，对他放弃了妈妈的愤怒，对他的纠结和痛苦，都能这么随意就以这样轻描淡写的姿态抹消吗？</p>
+<p>刘启其实质问了自己很多遍，所有人，甚至他自己，都是那么坚定地认为，刘培强是一个英雄。但在他想用这种自我审视将自己说服的时候，心中总有一块地方有一小股情绪在不住地涌动。抗争持续了大约四个月左右，这股大概可以名叫“意难平”的情绪，终于让他再次下定决心，把之前的谋划化作现实。</p>
+<p>当他再次来到地面，出现在他眼前的，就并不是上回见到的永昼了。</p>
+<p>北京，进入了永夜。</p>
+<p>刘启他也，在时隔十七年之后，再次看见了星星。</p>
+<p>（4）</p>
+<p>距离苏拉威西事件，实际上差不多有五年了。</p>
+<p>刘启他，从来没敢回忆过。</p>
+<p>而在他以为，他已经将那件事永远深埋在自己的回忆里，他已经把刘培强再次见到他时的每一个举动刻在心里，甚至是他带来的疼痛也烙印在灵魂里的时候；苏拉威西的消息终究让他的回忆翻卷起浪，经久不休。</p>
+<p>但在他浑浑噩噩却安排好一切，逃开了小队，站在北京的寒冷地面上，看着被他无数次抬头凝望的夜空时，浮现在眼前的，除了刘培强，居然还有王磊。</p>
+<p>王磊这些年来，每一个忙里偷闲的日子，都留给了朵朵。但是，在给朵朵做爸爸的时候，似乎也总会捎带上他一份。虽然在小队里任务完成的不够好时，挨骂最多的就是他，但回到家里，王磊就能温情到给他们俩亲手烹制些红烧蚯蚓干，酱爆地龙肉之类的菜式。是的，大概一半是朵朵的口味，而一半是他的。</p>
+<p>王磊在那事过后，就申请住到他家附近，虽然他也别扭地邀请过王磊直接住到家里，但王磊似乎有什么顾忌似的，一直没同意。只是默默越搬越近，成了一个小区的邻居。其实慢慢的，他也感觉出来王磊顾忌的是什么了；其实啊，姥爷的事，我在苏拉威西，就不怪你了。</p>
+<p>（5）</p>
+<p>离家出走的下一步，应该是什么？刘启自问一句，就大跨步的向前，带着再一次成功偷取的姥爷的车卡，上了373号运载车。</p>
+<p>这一次，他打算去上海，看看姥爷的家，找找朵朵的爸妈；最重要的是，找找地面上生活的地面派，躲开刘培强的监视员MOSS，自己生活几年，等到自己足够成熟，不再被这些情绪驱使的时候，再以一种能和刘培强平静对话的形象回家吧。</p>
+<p>在他一路顺利的行驶到了上次的伤心地的时候，刘培强的通话请求被MOSS强硬的接入了。“儿子，就这么不想和爸爸一起生活吗？”说来奇怪，刘培强的语气实际上并不带什么情绪，但刘启似乎听出了一点沉重，让他马上要冲出口的那句话沉甸甸坠在心里，说不出来。沉默许久，过分灵敏的通话设备却忠实地传递着两个人的呼吸声，让他不由自主的逐渐紧张起来，最终一巴掌挂断了通话，呆呆的望着眼前黑漆漆的路。</p>
+<p>车又走了几个小时，离上海已经不远了。一路上，他也碰到了很多回的救援信号，但是考虑到自己的能力，他终究还是遵照之前的培训内容，一次也没下过车。</p>
+<p>只是，培训内容中似乎没有说过，遇到联合政府坠毁的飞机时，究竟该不该相信那里传来的信号。刘启本来还是想直接开走的，只是总有一点放不下心，在踌躇许久之后，他还是带上了他改装的武器，下了车。</p>
+<p>进了飞机，里头似乎已经完全没有人了，他稍微放下了心，打算再一次出发的时候，忽然感觉背后有个人在接近。在他不动声色的快速跳开转身，顺手把武器揣在了手中时，就听到“咣啷”一声，一个瘦弱的文职小眼镜，结实的摔在了他的面前。</p>
+<p>随后，就是一段简单的交流，反正最终的结果，就是李一一，坐上了他的车，一起向着上海前进。刘启并不知道为什么自己这么轻易就相信这个技术宅不是个假货，但不论怎么说吧，一路上不再是自己一个人，整个旅途就似乎没那么漫长了，也似乎，能把刘培强那未尽的话彻彻底底的抛在脑后了。</p>
+<p>但是，在运载车十分顺利的到达上海之时，意外，果不其然还是来了。</p>
+<p>随着“砰”的一声巨响，运载车就这么在路中央抛锚了，而周边围拢过来的那群人，从脚指头缝都展示着什么叫做——不怀好意。</p>
+<p>（5*）</p>
+<p>发现儿子跑了的时候，刘培强其实并没有多么生气，反而是一种“啊，终于来了”的如释重负。他早就知道，和儿子这么多年来的隔阂，并不是他在家里，用所谓的温水煮青蛙的方式就能消除的。</p>
+<p>之前刘启那么容易在被自己揍了一顿之后就软化下来，并不是因为这层隔阂不存在，只是自己的死亡以一种太过于决绝的方式，把他心里的那层坚冰直接炸开了。那时候迫于无奈的举动其实会让他有阴影的，但是刘培强的这腔愧疚也再没什么法子传递给应当活在另一个时空的刘启了，所以他在看着这个时空的儿子的时候，给予了极大的包容心。</p>
+<p>该怎么让因为这些年的留守儿童生活受到很大伤害，还记恨自己放弃了他的妈妈的儿子，能稍微对自己敞开一点心扉呢？刘培强其实寻求过MOSS的帮助的，但是种种看起来很有效的办法，全都被他否决了。MOSS作为一个强人工智能，其实也提出过疑问，为什么人类有的时候愿意相信成功率为0.00%的计划，有的时候却根本不同意进行成功率99.05%的计划呢？刘培强乍一听到这个问题的时候，相当惊讶，开始怀疑难不成MOSS通过数据流同样来到了这个时空。但过了一会他就放下了这个疑问，是或是不是，又有什么差别呢？在思考良久后，刘培强给出的回答是，“因为，人类是会想保护自己所爱，也愿意为了自己爱着的人粉身碎骨的存在吧”。</p>
+<p>就算成功率是100%，但是要再伤害自己儿子一次，刘培强也不忍心。</p>
+<p>于是在他的拖延之下，情况就这么突兀的变化了。即使刘启挂断了他的通讯，MOSS也一直监测着动向，刘培强有些纠结的考虑着这次究竟应该怎么样追儿子。但就在他还没能考虑好是继续向上申请临时性私人用车，还是放任刘启冷静一段时间的时候，MOSS忽然通知他，刘启的信号中断在刚进入上海的那片区域。</p>
+<p>得，这还犹豫什么，只能申请搜救队了。</p>
+<p>（6）</p>
+<p>刘启这回的打算是什么呢？</p>
+<p>说来简单，做个卧底。</p>
+<p>做来可不会像说起来这么容易，在未经过多计划的出逃之后，他的第一个行动，就是坐在从一哥那里“借”来的车里，对着纸张涂涂抹抹，计划起该如何混入叛军，又如何端掉窝点，还如何给这个组织一个毁灭性的打击。</p>
+<p>但是刘启嘛，这次的身边没有李一一，在凭着急智，趁着叛军团伙想要攻入他选定的推进式发动机的时候，装成被“不会氦闪”洗脑的无辜群众，带着车加入了上海地区的叛军后，事情就再没像他想的那么顺利了。</p>
+<p>叛军的日常是什么呢？除了在地面上生活，实际上和地下城也没太大的区别，最大的区别就在于——食物。地表的温度，是没有办法种植任何东西的。但是食物这种东西，一般是不会在地面上运送的。于是每股叛军，都不会离开地下城太远，需要地下城中的卧底给他们偷运食物。而除此之外，在偏僻的地点设下埋伏，然后捕获一些误入陷进的车辆，就是他们大多数牙祭的来源了。</p>
+<p>刘启由于提供了一辆车，并没有在一开始就被逼迫进行这种掠夺。但随着时间的推移，在刘启不时流露出些许不赞同的神色之后，叛军的小队长，也逐渐开始对他旁敲侧击，让他快点开始任务，交上一份投名状。</p>
+<p>又这么僵持了一段时间，在刘启进入叛军团队四个月后，他终于在周身的怀疑目光之下点了头。</p>
+<p>后天，就是他应当出任务的时候了。</p>
+<p>但就在十天前，他已经攻破了他房间里的信号屏蔽装置，成功的和李一一，制定了一个计划。</p>
+<p>这一夜，一定很精彩。</p>
+<p>（6*）</p>
+<p>要是有人问王磊，他是不是在把刘启当成儿子养，他肯定会立刻给对方一个肯定的答复。</p>
+<p>但是如果把时间和空间全都留给他，这个答案虽然不会变，但似乎也不会这么坚定了。</p>
+<p>他在第一次看到刘启的时候，就知道这是一个有个性的孩子，虽然满脸写着倔强和不羁，似乎有满满的少年意气要溢出来，但又因为生活给他的磨砺，有着近乎少年与成人的复杂混合。但这一切，都不妨碍他把这个已经因为爸爸的牺牲真正有了担当的青年当成儿子来养，毕竟，这小子是朵朵的哥哥，不是吗？</p>
+<p>在发现刘启逃跑的时候，王磊很快的就从最近他留下的蛛丝马迹之中，猜测到了他的去向。但不论原因是什么，就他这个举动，只能用逃兵来解释。虽然，刘启还不算是个军人，但是这种行为，是王磊最不能接受的一种了。</p>
+<p>但是，王磊没有告诉任何人的是，对于刘启这次的逃跑事件，他其实并没有多大的愤怒，取而代之的，大概是担忧吧。</p>
+<p>所以，当李一一联络他，告诉他刘启目前所在和他们的计划的时候，他的这份担忧忽然被点着了，熊熊燃起的愤怒告诉他，刘启回来的时候，一定不会好过。</p>
+<p>（7）</p>
+<p>刘启和李一一被迫从车里出来之后，就火速被围拢来的叛军解除了武装，扔进了大牢里。一进那地方，就发现同一间里还有个似乎有些眼熟的白毛，被他们俩被扔进来的声音吵醒了，一口京片子完全唤起了刘启惨痛的回忆 。</p>
+<p>兜兜转转莫名其妙聚在了一起的冒险小分队三人组，虽然又经历了一次素不相识到有些熟悉，但几人骨子里的冒险精神决定了，他们一定不会这么随随便便的就接受这种任人鱼肉的境遇。“刘启，你刚才为什么不直接开着运载车冲出去啊？”“你当我不想呢，这车是我姥爷的，我没正经学过。在那种情况下瞎开别说逃不出去，被他们拦下来又造成什么伤亡的话我们俩连这待遇都不会有，直接就给他们突突喽。”“李一一你这电脑怎么没给缴了啊？”“他那抱着电脑的样子跟个狼崽子似的，反正又没什么杀伤力，就这么被放过了呗。”“你们俩说，咱能不能安全出去啊？他们叛军把咱关起来究竟有啥用啊？”“中澳合资，谁跟你咱呢！”“刘启，你连他外号都取好了啊？比我还快！不说这个，你们看我这骰子，40点，肯定安全出去！”“我感觉啊，他们现在可能缺人了，先把物资抢了，再把有技术的咱几个关着，关一段时间过来威逼利诱，让咱给他干活！”“我觉得大概也是这样，那我们要逃，就要趁现在还算体力比较充足，快点找个办法。之后要是被饿到不行了，还逃个屁啊！李一一你不是啥联合政府啥啥的吗，快想个办法！”“我是联合政府紧急观察员好吧，职位很高的！”</p>
+<p>之后，就没什么声响了，除了李一一屏幕上透出的光，和他写写画画时笔尖的摩擦声，整个牢房都安静的不可思议。</p>
+<p>毕竟这是地面，还是叛军的关人场所，条件十足的差，连恒温设施的恒温温度都不是室温，而是0度左右。但也因为环境不好，使用机会又少，不但没有监控装置，连狱卒都没留下来看守，也给了他们制定计划的机会。</p>
+<p>随着一道骰子的清脆撞击声，李一一蹦了起来，惊醒了在旁边睡得迷迷糊糊的口心二人。“成啦，我计划好了！”言罢，李一一就拿着他的小电脑，把总结出来的几条和他们一一分说。</p>
+<p>“首先，我们在的位置和其他地方唯一相连的通道，只有排气管。而排气管道在这边的出口，就在我们这间牢房里。”</p>
+<p>“等等，你是怎么知道的？”</p>
+<p>“你们还记得著名的‘春节十二响’么？”看着Tim迟疑的点了点头，李一一欢快的继续往下说，“那程序我写的。所以，带着电脑破解这里的内网，了解个构造图什么的，很容易。”</p>
+<p>“正因为就在这间牢房里，我们才有机会。接着，就是靠你们俩，把通道口打开，然后我们顺着管道，爬到这个地方——”李一一把笔往他打开的构造图上一戳，将“训练室”三个字重重圈了出来，“然后我们就可以从那里破解密码，逃出去。”</p>
+<p>看着刘启似乎想要开口，李一一一伸手拦在他的嘴前，示意他先不要开口。“破解密码就交给我，那里因为设施比较多，我们可以稍微找点东西防身，是最好的选择。等到逃出去，我会用病毒临时破坏他们的大门控制系统，给我们争取逃走的时间。好了，你们俩有什么问题现在可以说了。”</p>
+<p>“李一一，器材室边上那个，是不是就是军火库？”“对啊，怎么，你想把它炸了？”刘启嘴角出现了一抹坏笑。“不是吧，刘启你真打算这么干？那么大的动静，我们怎么可能悄悄逃走？”“怕什么，难道你们不觉得这些家伙抓了我们，抢了我的车，是要付出代价的么？再说了，哥可是个天才，你看我瞧瞧带进来的这个我改造的炸弹，有定时功能的，扔进去，定时引爆，不就成了！”</p>
+<p>“刘，刘启你可得想好了啊，这要出了什么差错我们俩都得陪你把命丢这！”“中澳合资你瞎嚷嚷个啥，我说没问题就没问题！到时候你们先进器材室，等你们把门开了我就过去丢。定时功能可以保持30分钟，够我们跑了！”李一一抱着电脑，看着这俩人脸红脖子粗的样子，缩在一边，显得弱小可怜又无助。直到刘启差点和Tim打起来，才弱弱的发声，告诉他们现在时机还不到，要等到后半夜巡逻人员换班后一个小时左右行动比较合适，这才让他们暂时安静下来。</p>
+<p>其实上海也是永夜，在这个时代，二十四小时制只不过是为了保留之前的习惯而已。但无论是地下城里的人，还是叛军，仍然坚持着按这种计时方式生活；不过都是坚持着对故土的怀念罢了。但总而言之，离李一一划定的时间，还有起码六个小时，而距离他们被抓进来，已经过了两个多小时了。</p>
+<p>（8）</p>
+<p>刘启和李一一讨论的计划，其实一点也不天马行空。他之前作为基地吸纳的“优秀投奔人员”，待遇还是很好的。于是，在这四个月里，他不但把能走的地方全走过去一遍了，还偷偷在房间里捣鼓出了不少小玩意儿。虽然作为基地，实际上对他这种人还是有监控的，但毕竟不是MOSS那种高级AI，他就拿出以前上课时糊弄老师，不，其实是王磊他们教的伪装方法，就成功的做了不少小动作。</p>
+<p>等到和李一一联系上，拿到了基地的完整构造图，衡量了一下整个基地的水平，他就打算，炸掉粮食储备库，偷走地下城卧底资料，如果能顺手把军火库和资源库也一起炸掉，那就更好了。</p>
+<p>于是到了计划实行的这一夜，在23:00时，和李一一约好的这个时间，李一一就直接动手修改了刘启的权限，以及黑了一部分的系统，给他执行计划创造了基本的条件。刘启在时间一到时，就飞快的顺着之前找好的最佳路线，冲到粮食储备库那里，先扔下了一排定时炸药。接着就小心翼翼的来到了他事先选好的那个肥胖而嗜酒的基地二把手那里，借着被授予的权限，悄悄打开了这间房。这个二把手，最大的缺点也就是嗜酒，这才给他以可乘之机；不然人家虽然可以说长相蠢笨如猪，但脑子不差，也有手段，这才在房间里截留了纸质的间谍档案。</p>
+<p>刘启能知道这个秘密，也全赖那人喝酒的时候，碰上他这个酒量奇迹般好的人，这才暴露了。“刘启，那东西在他床头，看着和周边是没有接缝的。你把电磁信号干扰仪用上，破坏一下外结构，密码我就能解了。”刘启没有说话，按李一一的话照做之后，果然相当顺利。</p>
+<p>但在他离开那里，揣着这份珍贵的资料，想要再去军火库和资源库的时候，意外的，在本该空无一人的走廊里，遇上了一个平日里总因为他受的待遇仇视他的人。“韩强，你这大半夜的不睡觉，在走廊里鬼鬼祟祟的是要做什么啊？怕不是想搞什么破坏吧。我早看你不顺眼了，现在正好，在战斗前搞破坏，有这罪名你不死也该脱层皮了呵呵。”刘启能怎么办，遇到这种混人，除了直接刚，还能怎么办？</p>
+<p>于是他直接先下手为强，趁着对方还在喋喋不休的倾吐作为反派的想法，抄起口袋里的维修扳手就给这人后脑来了一下。但虽然这人没来得及亲自上报，屋子里的警报也恰在此时响起了。“户口，快跑！刚才破解他床头密码的时候，我虽然觉得解开的太轻松了但也没多想，结果那家伙居然用了延时警报程序，我还没发现……所以现在你再不跑就逃不掉了，别想着什么军火库了，快点逃出这里，我给你打掩护啊快！”李一一的语速比平时还要快了许多，音调也因为紧张变得高了许多，显得有些尖锐。</p>
+<p>刘启皱着眉头，狠命向外跑。就在离大门还有半分钟路程的地方，从四面八方涌来的追兵浩浩荡荡的出现了。于是他脚步一拐，冲向了平时走的人很少的小通道，并且向后丢出了不少烟雾弹、闪光弹之类的小东西，虽然没什么杀伤力，也成功阻拦了不少人的脚步。</p>
+<p>现在距离出口只有不到十秒的路了，他早就想好一旦出去就直接冲着空隙跳，虽然整个路线不太容易，一不小心可能摔死，但是他是个天才嘛，一定会成功的。</p>
+<p>所以现在只差，跑出去了。</p>
+<p>（9）</p>
+<p>到了选好的时间，他们行动了起来。Tim睡过一觉想着，反正自己大概也打不过刘启，那么他想干什么就让他干吧，只求一切顺利，能成功逃出去。</p>
+<p>按照李一一的计划，一切都是那么的成功，毕竟这可是一个成功率90%的几乎完美的计划呢。</p>
+<p>刘启在通风管道里百无聊赖的等着李一一把密码解开，就飞快的爬到了军火库的上方，高高兴兴的把手里几乎所有的自制定时炸弹扔进去了，只留了一个设成立刻引爆的。甚至于他们向外跑的时候，连个追兵都没有，眼见胜利就在眼前，忽然随着身后连绵的几声巨响，背后传来了大量的脚步声——叛军，要追上来了。</p>
+<p>“刘启！你不是说你的炸弹他妈的能定30分钟吗！怎么这么快就响了啊！”“我做的时候也没考虑到它会受到武器的影响啊，这不就是提前了吗，大惊小怪什么！马上就跑出去了！”“出去，出去我们也还是会被追啊——”Tim话还没讲完，他们的确就已经跑到了室外，但周围一片空旷，该怎么逃还真是一个问题。</p>
+<p>刘启一跑出大门，就把他的最后一个炸弹向后一扔，企图把门炸上。自然没这么容易，他这个小炸弹，只能稍微的阻挡一下追兵的速度。直到当他们跑离大门差不多80米了，眼见追兵就要冲出来时，一切有了转机。</p>
+<p>数辆军用车忽然像是从天而降般出现了，以相当强大的火力将叛军及时的压制住了。但叛军毕竟不甘心这么束手就擒，反击力度也相当大。尤其是还用上了火箭筒之类的武器，其中一枚就直直向着眯着眼睛在专注的看一辆车的车玻璃的刘启飞去。“刘启，快跑！”那辆车的喇叭炸出了刘培强的怒吼，刘启恍惚了一下，再要跑就有些迟了。虽然没有直接被高速的火箭炮打中，但是受到爆炸的冲击，和少数弹片的袭击，刘启终究还是不太光荣的负了伤。而且在这股冲击波之下，整个人直接被抛飞了好一段距离，掉落下来的时候，差点没吐血。</p>
+<p>再之后，基本上军队还是很靠谱的把那群叛军压制了，除了少数逃走的，剩下的基本上就要根据流浪地球法受到惩罚了。但这些和刘启并没有什么关系了，他现在，在刘培强的车里，让医疗兵处理着伤口。幸亏他年轻身体好，冲击波并没有带来太大的伤害。而且这回出逃的时候因为有了经验，弄来了质量更好的防护服，虽然受了一些伤，但总体来说并不算很严重。</p>
+<p>只是刘启看着在他身边由于担心显得有些坐立不安的刘培强时，还是不怎么想说话。于是他闭上了眼睛，当做自己看不到，却不想，就这么一闭眼，就进入了黑沉的梦乡。</p>
+<p>他隐隐约约感觉自己现在的状态不太对，就好像作为一个旁观者，看到了他失去的那段记忆里究竟发生了什么。那天，从撞上冰柱，到第二天莫名其妙和刘培强睡在一起之间，身体里的，好像不是自己，又好像还是刘启。看着自己哭的稀里哗啦，和刘培强说那些肉麻的话；又看到自己醒来，被刘培强关在房间里揍了一顿，刘启十分庆幸，这一切并不是自己亲自经历的。然而，为什么看到这个情况，自己好像也脆弱了很多，甚至会出现，想要原谅刘培强的这种心情呢？</p>
+<p>刘启做着这十分不安稳的梦，挣扎着醒过来的时候，发现自己已经被安置在自己的那张床上了。身上的伤口被处理好了，虽然都是些皮肉伤，用完药甚至就已经基本上愈合了。而刘培强又一次出现在身边，坐在凳子上，半趴在床头，睡得也不是多安宁。</p>
+<p>刘启悄悄下了床，尽量不惊动刘培强，跑去卫生间洗洗涮涮了一番，有些吃惊的发现家里竟然没有别人了。当他回到自己的房间，打算把刘培强叫醒，让他回自己的房间睡的时候，就发现刘培强已经醒了，神色有些沉郁，坐在他的床上好像思考着什么。看到自己进来，刘培强的眼神不住在自己身上逡巡，刘启有种不安的感觉，尤其是感觉到刘培强的眼神每一次停留在一个伤口上时，怒气就上涨一分，就更加紧张了。</p>
+<p>他感觉有些危险，退后了一步，打算离开房间，逃离这种奇怪的气氛。然而他这个举动反而刺激着刘培强下定了决心，三步并作两步，在他靠近门口之前，就干脆的把门锁死了，留下刚走出半步的刘启站在原地，有些不知所措。</p>
+<p>这奇妙的危险感和既视感是什么……刘启总觉得，自己好像这一次要亲自，体验一下刚才的梦境了。果不其然，刘培强下一步，就是扯住他的手，用力一带，就把自己很顺利的按在大腿上。和梦里真是一模一样，那接下来就是……</p>
+<p>刘启怎么可能不挣扎呢，这么羞耻的姿势，难不成之前预演过就能不放在心里了吗？只是刘培强的经验都丰富了，直接用的就是上回自己没能再次逃跑的姿势，按得相当严实。“刘培强，你凭什么打我啊！”刘启这话，由于这任人鱼肉的姿势，都弱气了不少。然而刘培强都没理他，自顾自的顺手就把他的宽松大裤衩拽下去了。“妈的，刘培强！”早知道就不在洗澡之后光着上半身，还穿着大裤衩回房间了，不然哪里会这么凄惨啊。刘启的内心发出了悲鸣。</p>
+<p>“啪”刘培强这次揍儿子，依旧没拿上什么工具，就是干干脆脆的用巴掌，对着这中二病大儿子的屁股，一点点开始打。一轮过去，粉了；两轮过去，有点红了；三轮过去，似乎就转成普通的红色了。刘培强的手劲一点儿不小，刘启就这么强撑着挨了几轮，就有点难维持他的硬气了。“呜，刘培强你打够了吧，快点给我停下！”明明是威胁的话，因为被打疼了发出的小声音，却让整句话都变得有些像撒娇，当然刘启是绝对不会承认的。</p>
+<p>刘培强听到儿子这声音，忽然露出了点笑容，只是手上的力度根本不减，依旧认认真真的，继续揍。又打了几圈，刘启因为疼痛感，腿都有些软了，本来用力维持姿势，让自己不要悬空；结果随着脱离后的悬空，更难以通过绷紧肌肉减少痛感了。两相叠加，本来因为挨打变得红肿的屁股承受力就差了不少，这样还更疼了，真没受过这罪的刘启感觉再这么下去，他可能就要非常羞耻的，哭出声了。“刘培强，你还没打够吗……你别打了，行不行啊……”刘启这示弱的话让刘培强僵硬了一下，但是看了儿子一眼，发现他汗津津的脸上除了因为挨揍的忍痛表情，还是全无其他，就干脆利落地继续动手了。</p>
+<p>到了现在，刘启实际上已经被打肿了屁股，所以随着每个巴掌上去，掌印都比之前来得明显。痛感自然也是更加强烈，渐渐地，刘启感觉自己再不做点什么，就真的要被打哭了。“刘培强，你到底想怎么样啊！”刘启自己都惊讶的发现，这回开口的时候，他的哭腔都出来了。刘培强到这个时候，才终于回了他一句话，“你小子自己跑出去的时候，又想怎么样呢？”然而讲完这句话，他依旧没打算停下来，还是以一样的速度，继续揍着着瞎逞英雄的小破孩子。</p>
+<p>“刘培强你别打了啊！”刘启吼出这句话的时候，眼泪也跟着出来了。虽然就是传统揍孩子的样子，然而这种形式的疼痛太过连续而绵长了，比弹片那种一时尖锐之后隐痛的感觉难受多了；毕竟除了挨打，哪有什么伤口会越来越疼的……</p>
+<p>听到儿子都哭出了声，刘培强终于停了下来。“终于知道痛了？你瞎逞英雄的时候，怎么就不知道呢？”刘启眼泪掉下来之后，基本就破罐破摔，所以现在显得泪汪汪的。“我在你睡着的时候问过你的同伴了，本来按那个叫李一一的小伙子的计划，你们的出逃肯定很顺利。要不是你自己瞎逞能，至于受这么多伤吗？”“我这不叫瞎，瞎逞能，我的计划也很完美，只是差一点，就会非常成功的。现在这样，也有个80%成功啊！”明明还没脱离危险的情况，刘启又虎了一把，结果自然是又被亲爹抽了几巴掌，然后就蔫蔫的委屈了。</p>
+<p>“刘启！”刘培强事实上从来没这么严厉的和他的大儿子说过话，“你知不知道我看到你差点直接给火箭炮打中的时候是怎么想的？要是你身上当时没那么多弹片，我当场就把你扒光了揍你知不知道！”“刘培强，你当时不要我妈，这么多年又不管我，你以为你有什么资格替我做决定，给我划要求？”不管刘启是不是天才，至少在拱火这个职业，一定得了真传。本来怒火基本已经消退，打算好好和儿子谈开了的刘培强，闻言又高举了胳膊，“啪啪”几声清脆的巴掌再次炸响在刘启身后，这可怜的臀部已经逐渐要转青了。“刘培强，你能不能好好说话！没两句话就动手，你还是不是个航天员了！”“我也想好好和我的儿子说话啊，但是这小子就是不想承认自己的错误，只会东拉西扯啊。”</p>
+<p>“我没干什么啊，炸了叛军的军火库，能帮助多少人啊！再说我的准备也很充分，要不是当时被你转移了注意力，甚至我都不会受伤的。”“所以你觉得，你的老父亲在得知自己的蠢儿子离家出走，信号又消失的时候，过去找他，让他从叛军的地盘回来这是错的了？在看到自己的傻儿子差点给火箭弹打死的时候，叫他躲开，对他担心这也是错的了？”受到这样的指控，刘启就算是个中二病大儿童，也不可能那么不知好歹，别别扭扭的挤出几句蚊子叫一样的回答。“没有……所以刘培强我不是让你打了嘛，你还没消气啊？”这话出了口，刘启的耳朵根儿都红了。</p>
+<p>“所以你终于承认你干的不怎么对了？这么久了，大小伙子还没别扭够，非得弄得自己一身伤差点死了，才能报复爸爸吗？”刘培强说着这话的同时，终于把紧紧按在胳膊下头的大儿子放了下来，看着他还有些小愤愤的样子，内心还是有些惆怅。果然是没经过什么事，总想着用一些比较出格的行为来彰显自己的个性和各种想法，但是这样子的中二，最后能伤到的还不只是自己和爱他的人吗？刘培强在和MOSS讨论究竟怎么让儿子接受他的时候，MOSS提出了一个观点，他说刘启就像是以前黄金时代存在的一种群体“留守儿童”，虽然两件事的动机不一样，但实际上的效果并没有什么差别。而且刘启的童年生长在刹车时代，这种人类族群的绝望，又给他的成长带来了很多不良的影响。</p>
+<p>刘培强正是又想起了这一点，还想起了之前那灰暗的木星危机，又看着面前的还算青涩的大宝贝儿子刘启，默默叹了口气。算了吧，反正这个地球在这一代应该不至于再次出现那种全人类型的危机了，那么孩子长得慢一点，也好，还能等等爸爸跟上他的成长啊。</p>
+<p>悄悄龇牙咧嘴提好了裤子的刘启，看着面前看起来特别落寞的亲爹，内心实际上有些崩溃。都这么用力的打了自己一顿了，怎么看起来还完全没有消气，反倒是一副我欺负了他的模样啊……“刘，刘培强……”刘启想要让刘培强搭理他一下，然而在说出口的时候又觉得有点儿问题，“你别生气了，你都打我了，你怎么还生气啊……大不了，大不了我以后不离家出走了行不行啊？”他看着刘培强抬起头来，认真的看着他，但又不说话，心里有一些毛毛的。“你别这么看着我啊，你到底想怎么样啊你说啊！你说话啊，刘培强！”然而刘培强还是没张口，只是又一次伸手去拉他。刘启对这个动作都出现了心理阴影了，在刘培强的手还没彻底拉住他的时候，整个人往后蹦了一下，结果碰上了桌子，不但上面的东西哗啦啦掉下来不少，还撞到了伤。猝不及防下，又挤出了一滴眼泪。</p>
+<p>“儿子，别这么毛躁了。爸爸不打你了，你放心。”刘培强这什么意思啊，捂住屁股的刘启在朦胧的泪光中看不大清楚亲爹到底是个什么表情；这话怎么这么像是要和我划开什么界限的意思啊，下一句不会就是什么既然你这么讨厌我，那我以后就离你远点儿之类的话吧……“你这么讨厌爸爸吗？那之后，我还是搬出去吧，既然给你带来这么大的困扰。”刘培强果然这么说了，“我听MOSS说，你是觉得需要和我有一些距离让你好好思考一下。既然这样，那不如我出去给你腾出空间吧，这样你也不必一个人总是想偷跑了。不过你也不用多想，爸爸肯定一直会是你爸爸的，以后爸爸也会好好努力的，让你能感觉到爸爸还是爱你的吧。”“不，不用走。”刘培强听到自己儿子的挽留，感觉大概是他不好意思。“没关系的刘启，爸爸知道，你还不太适应家里多了个人，反正我也有地方可以住，我可以给你时间等你慢慢习惯。”“我说了不用！刘培强你不用走，这里也是你家，我哪有权利让你走……”“但是刘启……”</p>
+<p>刘培强的话没能继续下去，因为刘启石破天惊的一声打断了他。“爸！刘培强我喊你爸行了吧，你满意了吧，你别走了……欠了我这么多年，你怎么还敢走……”“刘启？”刘培强有些不敢置信，靠近了想再听一次，可看着刘启恶狠狠的小狼崽眼神，他反倒笑了，“那儿子，你不用原谅爸爸，之后的日子，就让爸爸补偿你，让爸爸和你一起重新长大，好不好？”刘启被说着话就靠过来把他搂住的刘培强吓得身体僵硬，红色从耳根逐渐向上蔓延。在刘培强就这么搂着他不放许久之后，别扭的动了动身子。“答应爸爸好不好？”“那，那看你表现……”言罢刘启就挣出了这个怀抱，爬回了床上，装睡。</p>
+<p>刘培强站在他床边，静静看了许久，才慢慢退出了房门。“MOSS，就算不是99.05%的计划，也还是没办法，让他一个人想通啊。”“刘培强中校，MOSS觉得，你这种体罚行为并不是为了完成计划。”“对啊MOSS，我只是单纯被这个小子气坏了而已。”</p>
+<p>（10）</p>
+<p>过了几秒，刘启终于离开了叛军基地的大门。门外的那片空隙，也正如他所想，并没有人把守。身后的追兵越来越近，他火速冲着看好的第一块石头跳下去。</p>
+<p>非常完美！和想象中一样，只是耳机里李一一的声音更加尖锐而紧张了。“刘启，你怎么选了这条路！”“你自己说其他方向我怎么跑，我拿半军用外骨骼和车子比怎么可能比得过，不找这种车开不了的路我还哪能把资料顺利运走啊！”“但是你选的这条路，最多只能下到距离地面40米的地方，你就算穿着真正的军用外骨骼都没办法安全着陆，更何况这种装备。而且这回你还没有带紧急逃生球，你怎么跑得掉！”“谁说我没带了？李一一，哥可是个天才，怎么会想不到这一点！”</p>
+<p>“那既然你想好了，我给你报点，只是到了地面上，你最多也就跟他们有那一小段距离，接着怎么逃？”李一一听到刘启有想过究竟怎么办，松了口气，语速也变得平缓多了，“虽然之前王队也知道了你这个计划，但是他会不会去接应你，这我就不知道了。”“什么？李一一你居然把计划告诉王磊了？李一一你个叛徒，还是不是朋友了，还想不想讨好我妹了，你居然告诉王磊了？”“怎么？有什么不能说的，你去卧底，诶，不对，你去卧底不是王队给的任务，是你偷跑的？”“对啊，怎么地吧？”“那这么多个月了你都没被查到，被通告除名？看来王队真的把你当儿子养了，这么大事情都能给你瞒下来！”“哥可是要做英雄的人了，你告诉王磊了，我这整个计划居然没直接失败了，这可真是个奇迹。李一一你听着，回去我要是不跟你好好算上这笔账，我就不姓刘！”“呵，那我等你，看你不先被王队训成孙子！”</p>
+<p>两个人吵吵闹闹的时候，刘启也没忘了小心翼翼地往下跳，终于到了最后的落脚点。他从口袋里掏出一个比当年缩水得有三分之二的小号逃生球，安心向下一跳，随着“砰”的一声，虽然还是安全着陆了，但是整个人挤在球里扭曲的样子，被埋伏在那儿的王磊看个正着。</p>
+<p>王磊上前两步，把刘启从那颗小破球里拽了出来，扔下了一句威胁，“刘启你给我上车等着，回去我再跟你算账！”刘启还没来得及发表什么观点，就听到头顶上一阵轰隆隆的响声，那些定时炸弹，引爆了！“计划成功了，李一一！”“是是，王队长还把你抓住了呢，计划成功加二。”“什么叫他把我抓住了，这是我累了，战略性休息懂吗？”“懂懂，反正王队长不是回去找你算账嘛，你先想好应对吧。我也累了啊，为了我浓密的头发，先睡了，再见！”“去吧去吧，李长条！”</p>
+<p>刘启上了一辆车，果不其然看到了CN171-11小队的好几个人，一上车，周倩就让锤子和溜子把他的防护服扒了。“诶诶诶，我没受伤，别这么急嘛！”“就你选的那些落脚点，能啥事都没有？户口，你什么水平我们能不知道吗？”刘启虽然嘴硬，但是实际上还是比较顺从的，只是先细心地确认了一遍自己带出来的资料是不是完好无损，妥善放在了车上的保险箱里，这才放松的任他们施为了。</p>
+<p>“户口同志，你这回的出逃行为，王队很生气哦。回去肯定会给你处罚的，不过劝你还是别跟他顶，不然他打都给你打服了。”“我这性质不一样，我这去做卧底了，而且还带了相当多资料回来，这不是很英雄的行为吗？再不成，将功折罪也够了！”</p>
+<p>“刘启！”闲聊没几句，王磊忽然就眼神凶狠地回到了车里，“我不管你的行为最后联合政府是怎么定性的，反正在我手下，就算你这次折算完无过还有功，在我这里你也别想好过。”言罢，王磊就不看刘启了，闭上眼睛开始小憩。</p>
+<p>“你不是给朵朵留了条子吗？听她说，王队看到条子的时候脸就绿了，气的真的不轻。我劝你好好想想怎么认错吧，毕竟是苏拉威西出事了，你生气冲动也情有可原。”周倩在刘启耳边悄悄地对他说。刘启本来想反驳一下，可看着边上疲倦的王磊，停顿了一下，回了她一句，“行，我知道了。”然后就选了个离王磊特别远的位置开始休息，留着小队的其他人面面相觑，车内的空气似乎也有些凝滞。</p>
+<p>回到北京之后，刘启带回来的卧底资料虽说不是特别高级，但相对于他的违规行为，还是很顺利的在功过相抵之后，又给他记上了一点小小的功劳。但他也是到这时候才知道，王磊在背后默默给他收拾了不少痕迹，让他能在卧底的这段时间里不被小队除名。</p>
+<p>在这段处理后续问题的时间里，王磊只出现过一次，而且过来做饭的时候，居然只做了朵朵爱吃的那种口味，还只有一份，刘启只能带点小气愤和委屈的扒着主食，再从朵朵的筷子下抢点儿。直到这一天，一切问题都解决了的时候，王磊才再一次出现了。</p>
+<p>王磊带着在那里接受了最终处理结果的刘启，路过刘启的家门前也不停，而是把他扯到了同在一个小区的自己家里。在这段路上，王磊还不忘给韩朵朵打了个电话，告诉她，这两天你哥哥是不会回家了，我打算和他来一些重要的谈话。刘启在一旁听着王磊给韩朵朵打电话时的温柔语气，有些不屑的扯了扯嘴角，真是一个女儿控，然而对自己就那么严肃。从最开始见到他，就从来没看到他的什么好脸色。</p>
+<p>而王磊在几乎是半扯着刘启进他的家门之后，究竟打算干什么？刘启完全没有任何有参考价值的设想，之前听小队队员说王磊真的生气时是非常可怕的，而且个个都要求他好好的反省自己最近的错误，争取让王队能够轻轻放下。可刘启感觉平日里王磊对他，就从来没有多温和过，自己还没怎么样就能被他骂个狗血淋头。这样的王磊，如果真的生气了那究竟有多可怕呢？</p>
+<p>进了门后，刘启本来以为王磊马上就会对着他十分严厉的的开始责骂，但似乎完全不是这样。王磊看起来非常冷静，也完全没有要责怪他的样子。难不成王队的隐藏属性是越生气越冷静？但从来没有听小队成员们这么说过啊，接下来究竟要面临什么，日常总是十分拽拽样子的刘启，不由得在内心中有些小怂。</p>
+<p>“刘启，你现在也没受什么伤吧？”“是，没伤。”“那好，跟我打一架吧。”“在，在这里？王队你家这可不怎么空旷啊，要是把你的瓶瓶罐罐，各种家具什么的弄坏了怎么办？”“没关系。”刘启看着王磊很坚定的眼神，虽然不知道为什么就成了这么个情况，当然还是同意了。刘启其实从当年木星事件那时候，因为对姥爷的事的愤怒，向王磊打过去一拳却被他非常轻易的接住那之后，就再没和王磊动过手。在小队里找人练习的时候，也从来没找上过王磊。这一切都是因为，现在他连小队里的周倩都还打不过呢，还怎么可能打的过队里最强的队长呢。</p>
+<p>然而王磊这时候非要和他打一架的用意，刘启想着，大概是想通过打自己一顿，向自己证明在武力值不太够的时候非要当卧底是件错误的事吧。反正就算打不过，刘启也不可能就这样放任自己直接认输，所以他努力思考了之前各项训练的基本原理，决定从王磊看起来最薄弱的腰腹部进攻。当年救下来朵朵，而王磊也差点死掉那时候，他其实差不多已经全身是伤。只是后期进行了对英雄的高级治疗和护理，王磊也可以说是因祸得福，整体的暗伤都治好了不少，这也是他最后还能回到小队里的原因了。</p>
+<p>刘启想来，王磊这么个年龄不小的男人，虽然平时训练很严苛，但是腰部这种位置在日常训练中的重视程度相对低一点，也就这么一种突破口了。于是就这么试一试吧。然而并不是特别如他所料，在他的拳头还没过一半路程的时候，王磊就抢先拎住了他的胳膊，然后飞速一转身，一探腰，他就结结实实被来了个背摔。在他仰面朝天，还有些恍惚的时候，脑子里还划过一个想法，难怪王磊根本不担心家里的东西，就这个实力差距，什么都坏不了。但他还没发个两秒呆，就感觉自己被翻了个身，两只胳膊被王磊钳在了后背上，而王磊，还在从口袋里抽出他事先准备好的小皮带，就感觉王磊这一定是预谋已久，他这处境真是非常危险了。</p>
+<p>“王磊你要干什么！”刘启倒不觉得王磊是想做什么恶劣的事，只是随着那根皮带把他的双手牢牢捆在了背后，他就有些慌张了。“呵，我们的大英雄刘启同志也会害怕吗？用那种错漏百出的计划，一个人偷偷脱队跑去卧底，把一些名录拿回来，你就觉得自己是英雄了？”王磊答话的时候手也不停，直接就开始扒刘启的裤子了。不是吧，刘启在脑中暗嚎了一句，难道王磊也和刘培强一样，喜欢这么传统的体罚？</p>
+<p>王磊看刘启没有回答也没有强烈反抗，反而是露出了有些痛心疾首的表情，反倒有些乐了，“看来你知道我打算干什么了？”“是是……你打算揍我一顿，王队……”刘启有气无力的回答着，本来以为会是被他打几拳踢几脚那种军中教训人的方式，结果呢，就这么没有设防的任人鱼肉了。尤其是想到自己拳还没出去一半，就被放倒在地上了，连反抗都失去了动力。</p>
+<p>王磊也不拖延，从背后拉着他的手就把人整个囫囵着放到沙发上，还是那个靠背位置，高度正好。接着还能怎么，上手揍呗。随着王磊的第一个巴掌下来，刘启差点就要发出哀嚎了。可算是知道进门的时候王磊为什么会问他有没伤了，就这手劲，没伤都得在床上趴几天吧。王磊打人的时候，比刘培强更讲究效率，毕竟他俩兵种不同嘛，这行事就有差异。王磊就光打了一圈儿，刘启那臀部可就肉眼可见的全红了，这痛感自然不用说，刘启也没在他爹面前那种偶像包袱，疼了该喊就喊，反正隔音也好。</p>
+<p>所以王磊还没打他几下，就被这小子的“啊，额，呀”各种音效给烦的不行。“刘启，这么大人了，挨个打而已，至于跟被杀的猪似的嚎叫吗？”“王队啊，嘶，我建议您啊，往自己身上来几巴掌，就知道您下手有多重了！”刘启对王磊的话其实也不是不在意，只是按他们这微妙的关系，既然都给按这儿揍了，也没必要在别的地方委屈自己。王磊看看刘启这表情，再听他这话，还能怎样，苦笑了一下，反而更加大了力气挥巴掌。不是喜欢叫嘛，再疼点还能有力气叫不成？</p>
+<p>随着王磊这新一轮的加力，刘启感觉自个儿的屁股大概是快碎了，虽然实际上也就是比较红肿，有些掌印交错的地方有点儿泛青罢了。“王磊，王队，王爸爸？您老为啥要这么教训我啊，真把我当您儿子了？”刘启的话语中带着些和Tim说得多了沾染的欠儿意味，虽然实际上都已经有气无力了，但还是挺让人着恼的。“别了别了，我可没你这样的儿子，我有朵朵当女儿就好了，听话懂事，比你这种要命的小子好多了！”王磊话虽然这么说，但语气里的亲近，只要没聋了都能听得出来，“要不是因为你是朵朵的哥哥，就你这样的破孩子，跑哪儿去了死哪儿了都没关系，我才不会担心呢。”</p>
+<p>话是这么说，刘启也不是傻的，已经疼的快站不住了，还是快点儿认错保平安。“王队，我错了，您高抬贵手放过我行不。我保证，以后做决定之前一定会先通知您的，成不？”刘启这句话都被巴掌打断了两次，痛苦的扭了扭，“唉，王队您别打了成不，我觉得您快给我打碎了……”王磊看着刘启这种可怜巴巴的样子，没想到平时桀骜不驯的外壳下面，竟然是这么样个挺可爱的男孩子。其实有个这样子的大儿子，好像也不差。</p>
+<p>刘启这次虽然是偷跑去做卧底，但因为是苏拉威西出了事，让这样还很冲动的年轻人什么都不做也太难为他了。而且再想想计划整体还可以，也做了充分的事前调查；即使他体能不行，又瞎走危险的线路，也没受什么伤，还把资料偷了一部分回来。综合算来，刘启这问题罚也罚过了，都开始装可怜了，干脆就放过他吧。王磊心念转到这，也就停下了手，看着刘启这可怜的屁股都开始有些青青紫紫了，也差不多了。接着就是帮他松了手腕的皮带，看着刘启哭丧着脸捂着屁股，想了想，还是要再骂他一句来的好，“你看你这么大人了，功夫不到家就敢瞎出去蛮干，计划不到家最后看运气，丢不丢人那？”</p>
+<p>刘启自然并不觉得丢人，只是学乖了，腹诽着瞪了王磊一眼，也不去捡还在地上可怜唧唧躺着的裤子，自顾自走到王磊的房间里，抢了他一身睡衣，跑去洗澡了。然而他行动不便啊，等到好不容易从浴室出来，基本就变成一摊咸鱼，趴在王磊家里他的客房里早早入眠了。</p>
+<p>次日一早，刘启睁开眼睛，就看见他那身衣服都被洗好烘干放在床边的凳子上了。在他百般挣扎，吸气再吸气终于衣着得体之后，出了房门，看见王磊很有家庭煮夫的气息般帮他弄好了早饭的时候，大咧咧就走到了桌子前，给王磊一个有些得意和傲娇的眼神，也不说话，拉开椅子就要坐下吃饭。结果乐极生悲，坐下的时候被过分坚硬的椅子逼出了“嘶”的一声巨大的抽气声，差点因为过分不防备眼眶都有点泛红了。在他好不容易坐定，抬头看一眼王磊的时候，发现这家伙居然难得地笑了。</p>
+<p>唉，这真令人生气，不是么！</p>
+<p>（*）</p>
+<p>刘启觉得自己也八十多了，现在也应该是已经寿终正寝了，但是为什么似乎还能思考，就是睁不开眼睛呢？</p>
+<p>随着他的意识逐渐清晰，他似乎能够感觉到眼前朦胧的光晕。</p>
+<p>忽然，耳边传来了一声“爸”，这时，他发现他能睁眼了。</p>
+<p>在他睁眼的时候，他看见面前的两个人目瞪口呆地望着自己；而面前的这两人，也让他惊讶到感觉自己都在颤抖。</p>
+<p>一个，是二十来岁的自己；另一个，是看着和记忆中没什么区别的，刘培强。</p>
+<p>他再望向这间熟悉房间里应当有镜子的那个柜子，镜子里映出的，是和边上的自己一模一样的，半透明的身体。</p>
+<p>“爸，那也让我，看你变老一回吧，好吗？”</p>
+<p>（完）</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.5090c770.min.js"></script>
+      
+    
+  </body>
+</html>
