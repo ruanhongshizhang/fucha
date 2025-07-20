@@ -3,7 +3,7 @@
 call D:\Learning\Programme\Anaconda\Scripts\activate mkdocs_env
 
 :: 切换到项目目录
-cd /d C:\Users\62517\Documents\0Asave\Interests\My story\web\my-site
+cd /d D:\AAsave\0Asave\Interests\My story\web\my-site
 :: 运行构建命令
 python build_mkdocs.py
 
